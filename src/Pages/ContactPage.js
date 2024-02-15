@@ -1,6 +1,5 @@
 import React , {useState, useEffect} from 'react'
 import axiosClient from '../axios';
-import { useStateContext } from '../contexts/ContextProvider';
 import PageComponent from '../components/PageComponent';
 import Loader from '../menu/Loader';
 
