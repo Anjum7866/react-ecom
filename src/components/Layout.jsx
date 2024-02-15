@@ -23,7 +23,7 @@ import '../css/responsive.css';
 
 
 export default function Layout() {
-	const { currentUser, userToken, setCurrentUser, setUserToken } =
+	const { currentUser, userToken } =
     useStateContext();
 	const location = useLocation();
 	const [categories, setCategories] = useState([]);
@@ -32,15 +32,6 @@ export default function Layout() {
     return location.pathname === pathname;
   };
 
-	const logout = (ev) => {
-		ev.preventDefault();
-		if (userToken) {
-		axiosClient.post("/logout").then((res) => {
-		  setCurrentUser({});
-		  setUserToken(null);
-		});
-	}
-	  };
 	
 	  
 	  useEffect(() => {

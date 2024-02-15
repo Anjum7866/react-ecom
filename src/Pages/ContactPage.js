@@ -6,7 +6,6 @@ import Loader from '../menu/Loader';
 
 function ContactPage() {
 	const [loading, setLoading] = useState(true);
-	const { showToast } = useStateContext();
 	const [formData, setFormData] = useState({
 	  name: '',
 	  subject: '',

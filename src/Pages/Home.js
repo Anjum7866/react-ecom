@@ -12,17 +12,6 @@ import '../css/owl-carousel.css';
 import '../css/slicknav.min.css';
 import '../css/reset.css';
 import '../css/responsive.css';
-import product from '../images/product.jpg'
-import product2 from '../images/product2.jpg'
-import product66 from '../images/product66.jpg'
-import top from '../images/top.png'
-import product14 from '../images/product14.jpg'
-import PANT1 from '../images/PANT1.png'
-import product11 from '../images/product11.jpg'
-import girl from '../images/girl.png'
-import shoe from '../images/shoe.jpg'
-import product15 from '../images/product15.png'
-import dress from '../images/dress.png'
 import { Link } from 'react-router-dom';
 import PageComponent from '../components/PageComponent';
 import { useState, useEffect } from 'react';
