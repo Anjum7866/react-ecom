@@ -45,7 +45,7 @@ const ProductPage = () => {
                 <h3>{product.title}</h3>
                 </Link>
                 <p>{product.description}</p>
-                <p>Price: ${product.price}</p>
+                <p>Price: ₹{product.price}</p>
               </div>
             </div>
           ))}
