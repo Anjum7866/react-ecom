@@ -90,7 +90,9 @@ export default function Layout() {
 		<div className="middle-inner">
 			<div className="container">
 				<div className="row">
-					<div className="col-lg-2 col-md-2 col-12">
+					<div className="col-lg-2 col-md-2 col-12" style={{
+						textAlign:"end"
+					}}>
 						<div className="logo">
 						<Link to="/" >
 						<img src={myLogo} alt="logo"/>
@@ -113,7 +115,7 @@ export default function Layout() {
                       </NavLink>
                       <NavLink
                         to="/product"
-                        className={`text-white p-2 ${isLinkActive('/product') ? 'bg-gray-700' : ''}`}
+                        className={`text-white  p-2 ${isLinkActive('/product') ? 'bg-gray-700' : ''}`}
                       >
                         Product
                       </NavLink>
@@ -125,7 +127,7 @@ export default function Layout() {
                             <Disclosure.Button
 							style={{ backgroundColor: '', border: 'none' }}
                             
-								 className={`text-white p-2 ${open ? 'dark' : ''}`}>
+								 className={`text-white p-2  border-dark bg-dark${open ? 'dark' : ''}`}>
                               Categories <i className="ti-angle-down"></i>
                             </Disclosure.Button>
                             <Disclosure.Panel className="bg-gray-700">
@@ -141,6 +143,10 @@ export default function Layout() {
                                 ))}
                               </ul>
                             </Disclosure.Panel>
+							<NavLink to="/contact" className={`text-white  p-2 ${isLinkActive('/contact') ? 'bg-gray-700' : ''}`}
+                     >
+          Contact Us
+        </NavLink>
                           </>
                         )}
                       </Disclosure>
@@ -220,11 +226,7 @@ export default function Layout() {
           Contact Us
         </Link>
       </li>
-      <li className={isLinkActive('/about') ? 'active' : ''}>
-        <Link to="/about" className="btn animate">
-          About
-        </Link>
-      </li>
+      
 										
 												</ul>
 										</div>
