@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axiosClient from '../axios'
 import Loader from '../menu/Loader';
 import PageComponent from '../components/PageComponent';
-import "./Products.css"
+import "../css/Products.css"
 
 const ProductPage = () => {
   const [products, setProducts] = useState([]);
@@ -36,7 +36,7 @@ const ProductPage = () => {
 							<div className="tab-pane fade show active" id="man" role="tabpanel">
 								<div className="tab-single">
 									<div className="">
-                  <div className="card-container">
+                  <div className="card-container" style={{justifyContent:'center'}}>
           {products.map(product => (
             <div className="card" key={product.id}>
               <img src={product.thumbnail} alt={product.title} />

@@ -37,7 +37,7 @@ const CategoryPage = () => {
 							<div className="tab-pane fade show active" id="man" role="tabpanel">
 								<div className="tab-single">
 									<div className="row">
-                  <div className="card-container">
+                  <div className="card-container" style={{justifyContent:'center'}}>
           {categoryProducts.map(product => (
             <div className="card" key={product.id}>
               <img src={product.thumbnail} alt={product.title} />

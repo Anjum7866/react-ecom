@@ -118,7 +118,7 @@ export default function Layout() {
                             <Disclosure.Button
 							style={{ backgroundColor: '', border: 'none' }}
                             
-								 className={`text-white p-2  border-dark bg-dark${open ? 'dark' : ''}`}>
+								 className={`text-white p-2  border-dark bg-dark`}>
                               Categories <i className="ti-angle-down"></i>
                             </Disclosure.Button>
                             <Disclosure.Panel className="bg-gray-700">

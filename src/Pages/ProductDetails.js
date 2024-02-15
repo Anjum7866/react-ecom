@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import "./ProductDetails.css";
+import "../css/ProductDetails.css";
 import Loader from '../menu/Loader';
 
 const ProductDetails = () => {
